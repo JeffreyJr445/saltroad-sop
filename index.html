@@ -15,403 +15,71 @@
     --muted: #8A7E74;
     --border: rgba(58,50,42,0.12);
     --border-mid: rgba(58,50,42,0.2);
-
-    --people-bg: #EAF0F7;
-    --people-text: #1A3A5C;
-    --people-pill: #C2D8EE;
-
-    --craft-bg: #F7EDE6;
-    --craft-text: #5C2A10;
-    --craft-pill: #EEC2A2;
-
-    --brand-bg: #EEE8F5;
-    --brand-text: #3A1A5C;
-    --brand-pill: #D4BAEE;
-
-    --events-bg: #F5EDD6;
-    --events-text: #5C3A00;
-    --events-pill: #EED48A;
-
-    --flex-bg: #EDEAE5;
-    --flex-text: #3D3730;
-    --flex-pill: #C8C2B8;
+    --people-bg: #EAF0F7; --people-text: #1A3A5C; --people-pill: #C2D8EE;
+    --craft-bg: #F7EDE6; --craft-text: #5C2A10; --craft-pill: #EEC2A2;
+    --brand-bg: #EEE8F5; --brand-text: #3A1A5C; --brand-pill: #D4BAEE;
+    --events-bg: #F5EDD6; --events-text: #5C3A00; --events-pill: #EED48A;
+    --flex-bg: #EDEAE5; --flex-text: #3D3730; --flex-pill: #C8C2B8;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--warm-white);
-    color: var(--text);
-    min-height: 100vh;
-    padding: 2rem 1.5rem 3rem;
-  }
-
-  .header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 0.5px solid var(--border-mid);
-  }
-
-  .brand-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 10px;
-  }
-
-  .header h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 38px;
-    font-weight: 300;
-    color: var(--dark);
-    letter-spacing: -0.5px;
-    line-height: 1.1;
-    margin-bottom: 10px;
-  }
-
-  .header h1 em {
-    font-style: italic;
-    font-weight: 300;
-  }
-
-  .header-sub {
-    font-size: 12px;
-    color: var(--muted);
-    font-weight: 300;
-    line-height: 1.6;
-    max-width: 420px;
-    margin: 0 auto 1.5rem;
-  }
-
-  .legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-
-  .leg {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 10px;
-    color: var(--muted);
-    font-weight: 400;
-    letter-spacing: 0.3px;
-  }
-
-  .lsq {
-    width: 9px;
-    height: 9px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-
-  .rules-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    justify-content: center;
-    padding: 1rem 0 0;
-  }
-
-  .rule-chip {
-    font-size: 10px;
-    color: var(--muted);
-    padding: 3px 10px;
-    border: 0.5px solid var(--border-mid);
-    border-radius: 20px;
-    background: white;
-    font-weight: 300;
-  }
-
-  .rule-chip strong {
-    font-weight: 500;
-    color: var(--text);
-  }
-
-  .pages {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  .page-block {
-    border: 0.5px solid var(--border-mid);
-    border-radius: 12px;
-    overflow: hidden;
-    background: white;
-  }
-
-  .page-hdr {
-    padding: 10px 16px;
-    background: var(--dark);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .page-hdr-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--cream);
-    letter-spacing: 0.3px;
-  }
-
-  .page-hdr-sub {
-    font-size: 10px;
-    color: rgba(245,240,232,0.5);
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .cell {
-    padding: 10px 11px;
-    border-right: 0.5px solid var(--border);
-    border-bottom: 0.5px solid var(--border);
-    cursor: pointer;
-    min-height: 88px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: filter 0.15s;
-    position: relative;
-  }
-
+  body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--text); min-height: 100vh; padding: 2rem 1.5rem 3rem; }
+  .header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 0.5px solid var(--border-mid); }
+  .brand-name { font-family: 'Cormorant Garamond', serif; font-size: 11px; font-weight: 400; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--dark); letter-spacing: -0.5px; line-height: 1.1; margin-bottom: 10px; }
+  .header h1 em { font-style: italic; font-weight: 300; }
+  .header-sub { font-size: 12px; color: var(--muted); font-weight: 300; line-height: 1.6; max-width: 420px; margin: 0 auto 1.5rem; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 1rem; }
+  .leg { display: flex; align-items: center; gap: 6px; font-size: 10px; color: var(--muted); font-weight: 400; letter-spacing: 0.3px; }
+  .lsq { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+  .rules-bar { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; padding: 1rem 0 0; }
+  .rule-chip { font-size: 10px; color: var(--muted); padding: 3px 10px; border: 0.5px solid var(--border-mid); border-radius: 20px; background: white; font-weight: 300; }
+  .rule-chip strong { font-weight: 500; color: var(--text); }
+  .pages { display: flex; flex-direction: column; gap: 1.5rem; max-width: 700px; margin: 0 auto; }
+  .page-block { border: 0.5px solid var(--border-mid); border-radius: 12px; overflow: hidden; background: white; }
+  .page-hdr { padding: 10px 16px; background: var(--dark); display: flex; justify-content: space-between; align-items: center; }
+  .page-hdr-title { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 400; color: var(--cream); letter-spacing: 0.3px; }
+  .page-hdr-sub { font-size: 10px; color: rgba(245,240,232,0.5); font-weight: 300; font-style: italic; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cell { padding: 10px 11px; border-right: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); cursor: pointer; min-height: 88px; display: flex; flex-direction: column; justify-content: space-between; transition: filter 0.15s; }
   .cell:hover { filter: brightness(0.94); }
   .cell:nth-child(3n) { border-right: none; }
   .cell:nth-last-child(-n+3) { border-bottom: none; }
-
-  .cell-num {
-    font-size: 8px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    opacity: 0.5;
-    margin-bottom: 4px;
-    text-transform: uppercase;
-  }
-
-  .cell-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.3;
-    margin-bottom: 2px;
-  }
-
-  .cell-sub {
-    font-size: 9px;
-    line-height: 1.3;
-    opacity: 0.6;
-    margin-bottom: 6px;
-    font-weight: 300;
-  }
-
-  .cell-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .fmt-pill {
-    font-size: 8px;
-    font-weight: 500;
-    padding: 2px 7px;
-    border-radius: 20px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
-  }
-
-  .cell-arrow {
-    font-size: 11px;
-    opacity: 0.3;
-  }
-
-  .loop-note {
-    text-align: center;
-    font-size: 11px;
-    color: var(--muted);
-    font-style: italic;
-    padding: 1rem 0;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.3px;
-  }
-
-  /* Modal */
-  .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(20,17,14,0.6);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    backdrop-filter: blur(2px);
-  }
-
+  .cell-num { font-size: 8px; font-weight: 500; letter-spacing: 0.5px; opacity: 0.5; margin-bottom: 4px; text-transform: uppercase; }
+  .cell-title { font-family: 'Cormorant Garamond', serif; font-size: 13px; font-weight: 500; line-height: 1.3; margin-bottom: 2px; }
+  .cell-sub { font-size: 9px; line-height: 1.3; opacity: 0.6; margin-bottom: 6px; font-weight: 300; }
+  .cell-bottom { display: flex; align-items: center; justify-content: space-between; }
+  .fmt-pill { font-size: 8px; font-weight: 500; padding: 2px 7px; border-radius: 20px; letter-spacing: 0.3px; text-transform: uppercase; }
+  .cell-arrow { font-size: 11px; opacity: 0.3; }
+  .reel-glow { box-shadow: inset 0 0 0 1.5px rgba(58,50,42,0.18); }
+  .loop-note { text-align: center; font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 300; color: var(--muted); font-style: italic; padding: 1.25rem 0; letter-spacing: 0.3px; }
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(20,17,14,0.65); z-index: 1000; align-items: center; justify-content: center; padding: 1.5rem; backdrop-filter: blur(3px); }
   .modal-overlay.open { display: flex; }
-
-  .modal {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    max-width: 360px;
-    width: 100%;
-    max-height: 85vh;
-    overflow-y: auto;
-    position: relative;
-    border: 0.5px solid var(--border-mid);
-  }
-
-  .modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    font-size: 18px;
-    color: var(--muted);
-    line-height: 1;
-    background: none;
-    border: none;
-    font-family: sans-serif;
-  }
-
+  .modal { background: white; border-radius: 12px; padding: 1.5rem; max-width: 360px; width: 100%; max-height: 85vh; overflow-y: auto; position: relative; border: 0.5px solid var(--border-mid); }
+  .modal-close { position: absolute; top: 1rem; right: 1rem; cursor: pointer; font-size: 20px; color: var(--muted); line-height: 1; background: none; border: none; font-family: sans-serif; }
   .modal-close:hover { color: var(--dark); }
-
-  .modal-pillar {
-    font-size: 9px;
-    font-weight: 500;
-    padding: 2px 9px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .modal-fmt {
-    font-size: 10px;
-    color: var(--muted);
-    margin-bottom: 4px;
-    font-weight: 300;
-  }
-
-  .modal-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--dark);
-    margin-bottom: 8px;
-    line-height: 1.2;
-  }
-
-  .modal-purpose {
-    font-size: 12px;
-    color: var(--muted);
-    line-height: 1.7;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 0.5px solid var(--border);
-    font-weight: 300;
-  }
-
-  .modal-label {
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 6px;
-  }
-
-  .modal-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-
-  .modal-list li {
-    font-size: 11px;
-    color: var(--text);
-    padding: 5px 0;
-    border-bottom: 0.5px solid var(--border);
-    display: flex;
-    gap: 8px;
-    line-height: 1.5;
-    font-weight: 300;
-  }
-
+  .modal-pillar { font-size: 9px; font-weight: 500; padding: 2px 9px; border-radius: 20px; display: inline-block; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .modal-fmt { font-size: 10px; color: var(--muted); margin-bottom: 4px; font-weight: 300; }
+  .modal-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; color: var(--dark); margin-bottom: 8px; line-height: 1.2; }
+  .modal-purpose { font-size: 12px; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 0.5px solid var(--border); font-weight: 300; }
+  .modal-label { font-size: 9px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .modal-list { list-style: none; padding: 0; margin-bottom: 1rem; }
+  .modal-list li { font-size: 11px; color: var(--text); padding: 5px 0; border-bottom: 0.5px solid var(--border); display: flex; gap: 8px; line-height: 1.5; font-weight: 300; }
   .modal-list li:last-child { border-bottom: none; }
-
-  .mdot {
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--muted);
-    flex-shrink: 0;
-    margin-top: 6px;
-  }
-
-  .modal-metrics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-bottom: 8px;
-  }
-
-  .metric {
-    font-size: 10px;
-    padding: 2px 9px;
-    border-radius: 20px;
-    background: var(--warm-white);
-    border: 0.5px solid var(--border-mid);
-    color: var(--muted);
-    font-weight: 300;
-  }
-
-  .modal-never {
-    font-size: 10px;
-    color: var(--craft-text);
-    padding: 6px 10px;
-    background: var(--craft-bg);
-    border-radius: 6px;
-    margin-top: 8px;
-    font-weight: 300;
-    line-height: 1.5;
-  }
-
+  .mdot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); flex-shrink: 0; margin-top: 6px; }
+  .modal-metrics { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+  .metric { font-size: 10px; padding: 2px 9px; border-radius: 20px; background: var(--warm-white); border: 0.5px solid var(--border-mid); color: var(--muted); font-weight: 300; }
+  .modal-never { font-size: 10px; color: var(--craft-text); padding: 6px 10px; background: var(--craft-bg); border-radius: 6px; margin-top: 8px; font-weight: 300; line-height: 1.5; }
   .modal-never strong { font-weight: 500; }
-
-  /* Pillar colors */
   .p-people { background: var(--people-bg); color: var(--people-text); }
   .p-craft { background: var(--craft-bg); color: var(--craft-text); }
   .p-brand { background: var(--brand-bg); color: var(--brand-text); }
   .p-events { background: var(--events-bg); color: var(--events-text); }
   .p-flex { background: var(--flex-bg); color: var(--flex-text); }
-
   .pill-people { background: var(--people-pill); color: var(--people-text); }
   .pill-craft { background: var(--craft-pill); color: var(--craft-text); }
   .pill-brand { background: var(--brand-pill); color: var(--brand-text); }
   .pill-events { background: var(--events-pill); color: var(--events-text); }
   .pill-flex { background: var(--flex-pill); color: var(--flex-text); }
-
   @media (max-width: 520px) {
     body { padding: 1.25rem 1rem 2rem; }
     .header h1 { font-size: 28px; }
@@ -436,17 +104,15 @@
   </div>
   <div class="rules-bar">
     <span class="rule-chip"><strong>85% faces</strong> — food never alone</span>
-    <span class="rule-chip"><strong>1 reel per page</strong> — never two back to back</span>
+    <span class="rule-chip"><strong>2 reels per page min</strong> — never back to back</span>
     <span class="rule-chip"><strong>1 CTA per post</strong> — always one action</span>
     <span class="rule-chip"><strong>No empty spaces</strong> — no people-free posts</span>
   </div>
 </div>
 
 <div class="pages" id="pages"></div>
-
 <div class="loop-note">After post 27 — loop back to Page 1 and repeat</div>
 
-<!-- Modal -->
 <div class="modal-overlay" id="modal" onclick="handleOverlayClick(event)">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
@@ -464,44 +130,44 @@
 
 <script>
 const pillars = {
-  people: { name: 'People & Community', cell: 'p-people', pill: 'pill-people' },
-  craft:  { name: 'Craft & Product',    cell: 'p-craft',  pill: 'pill-craft'  },
-  brand:  { name: 'Brand & Culture',    cell: 'p-brand',  pill: 'pill-brand'  },
-  events: { name: 'Events & Moments',   cell: 'p-events', pill: 'pill-events' },
-  flex:   { name: 'Flex slot',          cell: 'p-flex',   pill: 'pill-flex'   }
+  people: { name:'People & Community', cell:'p-people', pill:'pill-people' },
+  craft:  { name:'Craft & Product',    cell:'p-craft',  pill:'pill-craft'  },
+  brand:  { name:'Brand & Culture',    cell:'p-brand',  pill:'pill-brand'  },
+  events: { name:'Events & Moments',   cell:'p-events', pill:'pill-events' },
+  flex:   { name:'Flex slot',          cell:'p-flex',   pill:'pill-flex'   }
 };
 
 const pages = [
   {
-    title: 'Page 1 — Posts 1 to 9',
-    sub: 'Open with warmth, craft hero, brand statement',
-    cells: [
+    title:'Page 1 — Posts 1 to 9',
+    sub:'Brand reach, warmth and craft — two reels separated by carousels',
+    cells:[
       { p:'people', fmt:'Carousel', title:'Community faces', sub:'Guest UGC or team portrait',
         purpose:'Opens the sequence with warmth. Real people at the table or behind it. Makes followers feel like they belong here before they\'ve even visited.',
         points:['Curated guest UGC — one face per slide','Or editorial team portrait series','Slide 1: one confident line, nothing else','Final slide: \'Tag us when you\'re here\''],
         metrics:['saves','tags','comments'], never:null },
-      { p:'craft', fmt:'Reel', title:'Chef POV cooking', sub:'Hands, fire, salt, the pass',
-        purpose:'The reach driver for this page. First-person kitchen perspective. The hook is always visceral in the first second — salt falling or fire catching — to stop the scroll.',
-        points:['Camera is the chef — hands only, no face needed','Salt slow motion is the hero hook — shoot at 60fps','End with a guest receiving the dish and reacting','Ambient kitchen sound under music — under 30 seconds'],
-        metrics:['reach','rewatches','saves'], never:'Never shoot an empty room as the opening frame.' },
+      { p:'brand', fmt:'Reel', title:'You\'ll understand when you sit down', sub:'Cinematic statement reel. Atmosphere with a point.',
+        purpose:'The reach driver that opens with brand feeling not brand information. One line of text does all the work — the visuals just have to be undeniable. She saves it because she wants to be in that room.',
+        points:['Pure atmosphere — the room, the light, the wine, faces mid-conversation','No voiceover, no explanation — let the visuals breathe','One confident text overlay at the end: \'You\'ll understand when you sit down. The Salt Road, Houghton.\'','Audio: one piece of music that earns the feeling — moody, warm, unhurried. Under 20 seconds.'],
+        metrics:['reach','saves','shares'], never:'Never explain the restaurant in this reel. The point is to make her feel something she can\'t name yet.' },
       { p:'brand', fmt:'Carousel', title:'We heard what you said', sub:'Pull quotes. Real guest words.',
         purpose:'Social proof delivered with confidence. Real guest words as large editorial typography. She screenshots and sends to whoever she wants to bring. High save and share rate.',
         points:['5 to 6 slides — one quote per slide','Large type on deep atmospheric background — faces visible behind','Quotes from DMs, comments, verbal feedback','Final slide: atmospheric room shot with faces, reservation link only'],
         metrics:['saves','shares','DMs'], never:null },
-      { p:'craft', fmt:'Carousel', title:'The last 60 seconds', sub:'One action per slide. One word.',
-        purpose:'The plating sequence broken into individual actions. Each slide is one moment with one word overlaid. Builds tension across the swipe. Saved for the craft.',
-        points:['Toss — Season — Precision — Intention — Done','Each word in large type over a close-up action shot','Final slide: chef handing across the pass — a face on each side','Never a floating dish — always a hand or person connected'],
-        metrics:['saves','likes','profile visits'], never:null },
       { p:'people', fmt:'Carousel', title:'Ask the team', sub:'Video swipe. One question. Real answers.',
-        purpose:'Personality-driven team content. Each team member answers one question on video — straight to camera, completely unscripted. The team becomes characters the audience wants to meet.',
+        purpose:'Personality-driven team content. Each team member answers one question on video — straight to camera, completely unscripted. The team becomes characters the audience wants to meet when they visit.',
         points:['Consistent framing — same spot for all clips','5 to 8 seconds per person — one take only','Question overlaid at bottom of screen throughout','Final slide: team hands or the relevant prop they described'],
         metrics:['saves','comments','DMs'], never:null },
+      { p:'craft', fmt:'Reel', title:'Chef POV cooking', sub:'Hands, fire, salt, the pass',
+        purpose:'The craft reach driver. First-person kitchen perspective. The hook is always visceral in the first second — salt falling or fire catching. Ends with a human receiving the dish. Completely different energy to the cinematic reel.',
+        points:['Camera is the chef — hands only, no face needed','Salt slow motion is the hero hook — shoot at 60fps','Cut to a guest\'s face receiving the dish — that reaction is the emotional centre','Ambient kitchen sound layered under music — under 30 seconds'],
+        metrics:['reach','rewatches','saves'], never:'Never shoot an empty room as the opening frame. And never place this adjacent to the cinematic reel — separate them with at least two carousels.' },
       { p:'brand', fmt:'Carousel', title:'Things overheard', sub:'Anonymous table moments.',
         purpose:'Anonymous lines from real tables styled as bold type on atmospheric backgrounds. Funny, warm, intimate. Makes her screenshot and send to a friend. One of the highest send rates of any format.',
         points:['Table number format: \'Table 3: ...\'','Deep background — room blurred but faces still visible','4 to 5 quotes maximum — less is more','Final slide: warm room with faces, \'See you at your table\''],
         metrics:['screenshots','shares','comments'], never:null },
       { p:'events', fmt:'Carousel', title:'Event or occasion build', sub:'First mention. Tease not announce.',
-        purpose:'Every month has at least one event worth building toward. This is the first mention — an emotional invitation, not a promotion.',
+        purpose:'Every month has at least one event worth building toward. This is the first mention — an emotional invitation, not a promotion. Frames the event as an experience worth having.',
         points:['Lead with the feeling — not the logistics','Faces and atmosphere over details','End with scarcity if relevant: \'Limited seats\'','DM CTA — not just link in bio'],
         metrics:['DMs','saves','shares'], never:null },
       { p:'craft', fmt:'Carousel', title:'Dish storytelling', sub:'Chef leads. Their face, their dish.',
@@ -515,75 +181,75 @@ const pages = [
     ]
   },
   {
-    title: 'Page 2 — Posts 10 to 18',
-    sub: 'Deepen community, culture and event momentum',
-    cells: [
+    title:'Page 2 — Posts 10 to 18',
+    sub:'Community depth, event momentum — two reels separated by carousels',
+    cells:[
       { p:'people', fmt:'Carousel', title:'Our people', sub:'Curated guest UGC. One face per slide.',
         purpose:'The community recognition post. Real guests who\'ve visited, curated with breathing room. No text overlays on the images. Makes followers want to be featured next.',
         points:['Slide 1: one line only — \'These are our people\'','One guest image per slide — best of the month','No text overlays on people shots — let them breathe','Final slide: \'Tag us when you visit. We\'re always watching\''],
         metrics:['tags','saves','comments'], never:null },
-      { p:'brand', fmt:'Carousel', title:'The reservation was for 7:30', sub:'Facts only. No selling.',
-        purpose:'A story told entirely in facts — the first table arrived, the kitchen closed, the last table left at midnight, nobody noticed the time. Sells the experience without ever describing it.',
-        points:['Each fact as one slide — simple, no decoration','Faces and atmosphere behind every text slide','Build quietly to: \'Nobody noticed the time\'','Final slide: faces still there, still in it. Reservation link.'],
-        metrics:['saves','shares','DMs'], never:'Never use an empty room as a slide — always faces or hands behind the text.' },
-      { p:'craft', fmt:'Reel', title:'The contrast cut', sub:'Silence — chaos — full. Nobody does this.',
-        purpose:'Opens with 1.5 seconds of total silence on a perfectly set kitchen. Hard cut to full service chaos. Music drops on the cut. Ends on a warm dining room full of faces.',
-        points:['Silence for 1.5 seconds is the entire hook','Hard cut to kitchen chaos — music drops exactly on the cut','End on dining room full of faces and warmth','Text: \'Same place. Two completely different worlds\''],
-        metrics:['reach','rewatches','shares'], never:'Never use an empty dining room — empty kitchen only, and only for this specific concept.' },
+      { p:'people', fmt:'Reel', title:'UGC — the influencer experience', sub:'Their visit. Their words. Unscripted.',
+        purpose:'A real influencer visit captured authentically. Not a polished ad — a genuine reaction to the salt journey, the food, the wine. The influencer\'s unscripted words are the entire content. Posted as a collab to reach both audiences.',
+        points:['First frame: their face, a genuine reaction — the moment they taste something or discover the salt journey','Never direct their words — authenticity is the only asset this reel has','One to two cutaways max — always to their reactions, never to empty food or empty rooms','Post as collab post — reaches both audiences simultaneously. Under 30 seconds.'],
+        metrics:['reach','follows','saves'], never:'Never script or over-direct. If it feels produced it loses everything.' },
+      { p:'craft', fmt:'Carousel', title:'The last 60 seconds', sub:'One action per slide. One word.',
+        purpose:'The plating sequence broken into individual actions. Each slide is one moment with one word overlaid. Builds tension across the swipe. Saved for the craft and the obsession it reveals.',
+        points:['Toss — Season — Precision — Intention — Done','Each word in large type over a close-up action shot','Final slide: chef handing across the pass — a face on each side','Never a floating dish — always a hand or person connected'],
+        metrics:['saves','likes','profile visits'], never:null },
       { p:'events', fmt:'Carousel', title:'Event recap', sub:'Last night at Salt Road.',
         purpose:'After every event, a recap carousel cements FOMO for people who weren\'t there and converts them for next time. Highest-intent save of the month.',
         points:['Slide 1: best image — faces, warmth, the room alive','Slides 2 to 4: individual moments — people first, food second','Slide 5: one guest pull quote as large type','Final: \'Next one is [month]. Get on the list — link in bio\''],
         metrics:['saves','DMs','list building'], never:null },
       { p:'people', fmt:'Reel', title:'Guest testimony — office style', sub:'Documentary feel. Not an ad.',
-        purpose:'Real guests in an office interview format. Each person 5 to 8 seconds. Completely unscripted. Feels like a documentary, not a marketing video.',
-        points:['First frame: a face with one specific curious opening line','Fast cuts between guests — under 45 seconds total','One to two cutaways only — always to reactions, never to empty food','Feels like a documentary, not a marketing video'],
-        metrics:['saves','follows','shares'], never:null },
+        purpose:'Real guests in an office interview format. Each person 5 to 8 seconds. Completely unscripted. Feels like a documentary not a marketing video. The furthest thing from a scripted testimonial.',
+        points:['First frame: a face with one specific curious opening line — not \'I loved it\'','Fast cuts between guests — under 45 seconds total','One to two cutaways only — always to reactions, never to empty food','The gaps between answers matter — let a reaction land before cutting'],
+        metrics:['saves','follows','shares'], never:'Never place this adjacent to the influencer reel — separate them with at least two carousels.' },
       { p:'brand', fmt:'Carousel', title:'Experience ranking', sub:'Top 5 moments. Not dishes.',
-        purpose:'A ranking of top experiences as voted by guests. More emotional than a dish ranking. Higher save rate because it sells a feeling not a product.',
+        purpose:'A ranking of top Salt Road experiences as voted by guests. More emotional than a dish ranking because it sells a feeling not a product.',
         points:['Warm group faces open the carousel','One experience per slide with supporting faces and atmosphere','Build toward #1 with increasing tension','Final slide: \'What\'s yours? Tell us below\''],
         metrics:['comments','saves','shares'], never:null },
       { p:'craft', fmt:'Carousel', title:'360 POV — chef attached', sub:'Inside the kitchen. Completely original.',
         purpose:'360 camera mounted near or on the chef during service. The viewer is inside the kitchen moving with them. No format like this exists on most restaurant feeds.',
-        points:['No commentary needed — the format is the content','Ambient kitchen sound first — music fades in slowly','Keep the edit under 30 seconds','Caption: \'POV: Inside the kitchen\''],
+        points:['No commentary needed — the format is the content','Ambient kitchen sound first — music fades in slowly','Keep the edit under 30 seconds','Caption: \'POV: Inside the Salt Road kitchen\''],
         metrics:['views','follows','shares'], never:null },
       { p:'people', fmt:'Carousel', title:'Occasion framing', sub:'Gift the experience. Not the object.',
         purpose:'Father\'s Day, anniversaries, birthdays — framed emotionally as giving an experience. She saves this and sends it to someone before they\'ve even decided to go.',
         points:['Lead with the emotion — \'Not a voucher. Not a tie.\'','Faces of people enjoying the occasion throughout','One-line highlight per slide','Final slide: reservation link — no long CTA text'],
         metrics:['saves','tags','DMs'], never:null },
       { p:'flex', fmt:'Flex', title:'Flex slot', sub:'Collab, influencer or staff content',
-        purpose:'Use for the strongest influencer collab, a strong UGC moment, or a staff-led content piece. Keep it people-first regardless of direction.',
+        purpose:'Use for the strongest collab, a strong UGC moment, or a staff-led content piece. Keep it people-first regardless of direction.',
         points:['Influencer walkthrough — their face, their words, unscripted','Staff taste test — real reactions, no direction','Behind the scenes moment that earned its own post','Collab with a local brand or winemaker'],
         metrics:['varies by content'], never:null }
     ]
   },
   {
-    title: 'Page 3 — Posts 19 to 27',
-    sub: 'Brand depth, culture, build into the next cycle',
-    cells: [
+    title:'Page 3 — Posts 19 to 27',
+    sub:'Brand depth, personality and craft — two reels separated by carousels',
+    cells:[
       { p:'people', fmt:'Carousel', title:'Our people — fresh curation', sub:'New cycle. New guests.',
         purpose:'A second Our People post — always freshly curated from the most recent guest content. The faces change every time. Makes the community feel ongoing and alive.',
         points:['Always freshly curated — never reuse images from a previous Our People post','Slide 1: \'These are our people.\' — same confident opener every time','One guest image per slide — best of this cycle','Final slide: \'Tag us when you visit. We\'re always watching\''],
         metrics:['tags','saves','comments'], never:null },
+      { p:'craft', fmt:'Reel', title:'The chef tells you something', sub:'On camera. Personal. The story behind one dish.',
+        purpose:'The chef on camera, talking. Not a tutorial — a confession. The story behind why one dish exists, where an ingredient came from, the decision that almost didn\'t get made. Warm, slightly unscripted, completely personal. Makes the audience feel like they\'re being let in on something.',
+        points:['Chef to camera — close frame, warm, natural light if possible','Opens with the hook line: something that makes you stop. \'I almost took this off the menu three times.\' That energy.','The dish is visible but the chef is the character — the story is the content','Ends with the dish being plated or served — but we came for the person, not the plate. Under 45 seconds.'],
+        metrics:['saves','comments','follows'], never:'Never make this feel like a cooking tutorial. It\'s a story with a person at the centre, not a technique at the centre.' },
       { p:'craft', fmt:'Carousel', title:'Slow moments', sub:'Texture, sound, hands. Intimate.',
-        purpose:'Close-up moments that prioritise texture over movement. Butter melting, wine pouring, salt falling, steam rising. Hands always present. Intimate and unlike anything else.',
+        purpose:'Close-up moments that prioritise texture over movement. Butter melting, wine pouring, salt falling, steam rising. Hands always present. Intimate and unlike anything else on the feed.',
         points:['Every slide has a hand or person connected — never isolated food','Ambient sound on video slides — no music upfront','Sound note in caption: encourage people to turn sound on','Final slide: faces at the table, warm and alive'],
         metrics:['saves','rewatches','shares'], never:'Never include an empty space image — hands, steam, pouring, faces only.' },
-      { p:'people', fmt:'Collab', title:'Influencer collab', sub:'Organic. Their words. Not scripted.',
-        purpose:'The influencer\'s real experience — arriving, the food, the wine. Their words, completely undirected. Posted as a collab so it reaches both audiences simultaneously.',
-        points:['First frame: their face, genuine reaction — not a wide room shot','Never direct their words — authenticity is the only asset','One to two cutaways max — always to their reactions','Post as collab — reach both audiences at once'],
-        metrics:['reach','follows','saves'], never:null },
       { p:'craft', fmt:'Carousel', title:'Dish that almost didn\'t make it', sub:'Story arc. Survival. Craft.',
-        purpose:'The story of one dish that nearly got cut. Why it stayed. Creates emotional investment before people have even tasted it.',
+        purpose:'The story of one dish that nearly got cut. Why it stayed. Creates emotional investment in a dish before people have even tasted it.',
         points:['Opens with the dish — hands visible, never alone','Story across 5 slides — concise and confident','\'The chef made it anyway\' is the turning point slide','Final slide: \'Come decide for yourself\''],
         metrics:['saves','comments','DMs'], never:null },
       { p:'brand', fmt:'Reel', title:'The reservation story reel', sub:'Facts only. No selling.',
-        purpose:'The reach driver for page 3. A story told in facts across the reel. Sells the experience without ever describing it.',
-        points:['Open on a set table — a hand adjusting something','Each fact as a single text overlay — no explanation','Build quietly to: \'Nobody noticed the time\'','End on faces — warm, still there, still in it'],
-        metrics:['reach','saves','shares'], never:'Never open on an empty room with no human element.' },
-      { p:'brand', fmt:'Carousel', title:'Things overheard — vol. 2', sub:'New quotes. Same confident energy.',
-        purpose:'A second Things Overheard — always fresh quotes from real tables. The format is the same, the content is always new.',
-        points:['Always fresh quotes — never repeat from the first Things Overheard','Table number format: \'Table 3: ...\'','Deep background — faces blurred but visible behind the type','Final slide: \'See you at your table.\' Reservation link only'],
-        metrics:['screenshots','shares','comments'], never:null },
+        purpose:'The reach driver for page 3. A story told entirely in facts — no adjectives, no descriptions, no selling. The facts are so specific they sell harder than any copy could.',
+        points:['Open on a perfectly set table — a hand adjusting something, never empty','Each fact as a single slow text overlay: \'The first reservation arrived at 7:30.\' \'The kitchen closed at 10.\' \'The last table left at midnight.\'','Build quietly to the punchline: \'Nobody noticed the time\'','End on faces — warm, still there, still in it'],
+        metrics:['reach','saves','shares'], never:'Never open on an empty room with no human element. The hand on the table is everything.' },
+      { p:'people', fmt:'Collab', title:'Influencer collab', sub:'Organic. Their words. Not scripted.',
+        purpose:'The influencer\'s real experience posted as editorial content. Their words, completely undirected. Posted as a collab so it reaches both audiences simultaneously. Different to the UGC reel — this is more considered, more editorial.',
+        points:['First frame: their face, genuine reaction — not a wide room shot','Never direct their words — authenticity is the only asset','One to two cutaways max — always to their reactions','Post as collab — reach both audiences at once'],
+        metrics:['reach','follows','saves'], never:null },
       { p:'events', fmt:'Carousel', title:'Next event build', sub:'Tease. Not a full announcement.',
         purpose:'First mention of the next event — enough to create curiosity and drive DMs. Goal is list building, not ticket selling. People who DM are your warmest leads.',
         points:['One strong atmospheric image — faces, wine, warmth','One line: what, when, how many seats','CTA: DM a keyword — \'wine\', \'yes\', \'next\' — to get on the list','Do not reveal everything — leave something to discover'],
@@ -607,7 +273,8 @@ function buildPages() {
     const cells = pg.cells.map((c, ci) => {
       const pl = pillars[c.p];
       const n = postNum++;
-      return `<div class="cell ${pl.cell}" onclick="openModal(${pi},${ci})">
+      const isReel = c.fmt === 'Reel' || c.fmt === 'Collab';
+      return `<div class="cell ${pl.cell}${isReel ? ' reel-glow' : ''}" onclick="openModal(${pi},${ci})">
         <div>
           <div class="cell-num">Post ${n}</div>
           <div class="cell-title">${c.title}</div>
